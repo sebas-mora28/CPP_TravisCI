@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o"
+  "CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o"
   "CPP_TravisCI"
   "CPP_TravisCI.pdb"
 )

@@ -150,6 +150,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+test/calculator.test.o: test/calculator.test.cpp.o
+
+.PHONY : test/calculator.test.o
+
+# target to build an object file
+test/calculator.test.cpp.o:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o
+.PHONY : test/calculator.test.cpp.o
+
+test/calculator.test.i: test/calculator.test.cpp.i
+
+.PHONY : test/calculator.test.i
+
+# target to preprocess a source file
+test/calculator.test.cpp.i:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.i
+.PHONY : test/calculator.test.cpp.i
+
+test/calculator.test.s: test/calculator.test.cpp.s
+
+.PHONY : test/calculator.test.s
+
+# target to generate assembly for a file
+test/calculator.test.cpp.s:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.s
+.PHONY : test/calculator.test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... test/calculator.test.o"
+	@echo "... test/calculator.test.i"
+	@echo "... test/calculator.test.s"
 .PHONY : help
 
 
