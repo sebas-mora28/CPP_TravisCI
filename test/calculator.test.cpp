@@ -5,6 +5,8 @@
 
 
 
+
+/*
 Calculator* calc = new Calculator();
 
 TEST_CASE( "ADDING 8 +60 == 68", "[adding]" ) {
@@ -19,6 +21,8 @@ TEST_CASE( "SUBTRACTION 7 - 15 == -8", "[subtraction]" ) {
 TEST_CASE( "DIVISION 40 / 20 == 2", "[division]" ) {
     REQUIRE(calc->division(40,20) == 2);
 }
+ */
+
 
 
 
