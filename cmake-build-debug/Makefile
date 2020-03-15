@@ -123,32 +123,32 @@ CPP_TravisCI/fast:
 	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/build
 .PHONY : CPP_TravisCI/fast
 
-src/main.o: src/main.cpp.o
+src/Calculator.o: src/Calculator.cpp.o
 
-.PHONY : src/main.o
+.PHONY : src/Calculator.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/Calculator.cpp.o:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o
+.PHONY : src/Calculator.cpp.o
 
-src/main.i: src/main.cpp.i
+src/Calculator.i: src/Calculator.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/Calculator.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/Calculator.cpp.i:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.i
+.PHONY : src/Calculator.cpp.i
 
-src/main.s: src/main.cpp.s
+src/Calculator.s: src/Calculator.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/Calculator.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/Calculator.cpp.s:
+	$(MAKE) -f CMakeFiles/CPP_TravisCI.dir/build.make CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.s
+.PHONY : src/Calculator.cpp.s
 
 test/calculator.test.o: test/calculator.test.cpp.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CPP_TravisCI"
 	@echo "... edit_cache"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/Calculator.o"
+	@echo "... src/Calculator.i"
+	@echo "... src/Calculator.s"
 	@echo "... test/calculator.test.o"
 	@echo "... test/calculator.test.i"
 	@echo "... test/calculator.test.s"

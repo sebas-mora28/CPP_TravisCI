@@ -57,18 +57,18 @@ include CMakeFiles/CPP_TravisCI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CPP_TravisCI.dir/flags.make
 
-CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o: CMakeFiles/CPP_TravisCI.dir/flags.make
-CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o -c "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/main.cpp"
+CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o: CMakeFiles/CPP_TravisCI.dir/flags.make
+CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o: ../src/Calculator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o -c "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.cpp"
 
-CMakeFiles/CPP_TravisCI.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPP_TravisCI.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/main.cpp" > CMakeFiles/CPP_TravisCI.dir/src/main.cpp.i
+CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.cpp" > CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.i
 
-CMakeFiles/CPP_TravisCI.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPP_TravisCI.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/main.cpp" -o CMakeFiles/CPP_TravisCI.dir/src/main.cpp.s
+CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.cpp" -o CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.s
 
 CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o: CMakeFiles/CPP_TravisCI.dir/flags.make
 CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o: ../test/calculator.test.cpp
@@ -85,13 +85,13 @@ CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.s: cmake_force
 
 # Object files for target CPP_TravisCI
 CPP_TravisCI_OBJECTS = \
-"CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o" \
+"CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o" \
 "CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o"
 
 # External object files for target CPP_TravisCI
 CPP_TravisCI_EXTERNAL_OBJECTS =
 
-CPP_TravisCI: CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o
+CPP_TravisCI: CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o
 CPP_TravisCI: CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o
 CPP_TravisCI: CMakeFiles/CPP_TravisCI.dir/build.make
 CPP_TravisCI: CMakeFiles/CPP_TravisCI.dir/link.txt

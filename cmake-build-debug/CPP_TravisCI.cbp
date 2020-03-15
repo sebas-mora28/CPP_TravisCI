@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/main.cpp">
+		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.cpp">
 			<Option target="CPP_TravisCI"/>
 		</Unit>
 		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/test/calculator.test.cpp">
