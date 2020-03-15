@@ -1,6 +1,8 @@
 
+/*
 #include "../catch.hpp"
 #include "../src/Calculator.h"
+
 
 
 Calculator* calc = new Calculator();
@@ -18,5 +20,6 @@ TEST_CASE( "DIVISION 40 / 20 == 2", "[division]" ) {
     REQUIRE(calc->division(40,20) == 2);
 }
 
+ */
 
 
