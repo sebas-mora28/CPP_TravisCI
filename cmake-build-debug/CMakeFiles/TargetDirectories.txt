@@ -1,0 +1,3 @@
+/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/cmake-build-debug/CMakeFiles/CPP_TravisCI.dir
+/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/cmake-build-debug/CMakeFiles/edit_cache.dir
