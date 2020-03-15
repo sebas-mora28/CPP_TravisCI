@@ -1,10 +1,13 @@
-
 dist: trusty
 sudo: false
 language: cpp
 
-
 addons:
+  sonarcloud:
+    organization: "sebas-mora28"
+    token:
+      secure: "qBlFiNe6BbZxeSa4zKJNuMLI5qrgktzUFaXvEzDKlrLKnN434UlYfODFAzO3skgv8rHwySEB2B7IrMdDM0BPEDOd4/ip8+OxSQqOa0UCgNYUWuQQmGjnusdcm6TL+7BrW6qhKTLqLYOmEw7A80iFuxO4SatHNxOJDD4zDblxp6XDB/EXgZmh5YlIBCuflWYLpPfTcrHbLx31W/4sCHWdC4yZ90r6nN0bmHsVYCBvW7THjqYQT4be3jEtVzuElBaFrfpQtGzJcq6nllvpdS3UNzICP6mNKkWEsOxEXYAXIhVRJ1BZH/6oZYYjRm4DzP8939pEoDVKz+aJDqguUgE/3Xp0KnsJC+OUDLGJnDT1NAxNfAdejwHtVoPHWEHiqwkqkQeuRB70jTd90nEhkX0jqPL20XwxR2GEY/0Eo6WTKU2NvXrFgawKwbdLlVzCr7Xgjky/r5SSK9SIHBKdni23BjyGpy0aNtSCBTzWN9qbMhXb9HHdypaCncw/QTA7QgXw8XpH/r/v84ndWotCmk0uqzNlYJtZt79eIaQzDUSmByR5j/5vW8eKRmq0LYdIMgyy7oT+dWXfWHEyOVYnRnCgBk5wUBt7EFEJfTe5BWiSw4c/1v+aeZpKriFn6Ply9xWZiev2CuZW+w41FOMQU7NqLysJpGR0bn6uL8ScCM2mujI="
+  WeewIZO03GyXAUOfH8tPlpdicO9FHq2qrr4TS+wlCekt7md29mThwnBW4uWTwQK4oXbxWPo3KTduiDaj9PIOWCOwurdWV3oksiUi/Mad3I2SuYmHEMHgu7tuqd7Wcg/VNQrDt99CFfVIe84B+WBTZfb1noIGPaPANCNOX7qr6ZsosgGSBK81hP1RiM9/S7xBc36dDFtCJD3dFk1N7EPyaXKSK+dZo3/cDkQHzcrZB9sceXYSVfSMBsd33r1tHnsNFIUO1qhi8EgllFLMLbYWOPUdLuohw6CaNXDKawOCGM23HpgWVLAOwYtjzSmncYbFlj5WI9m7FBh2Z+4QmCpzyhJS9TU9ruvOAVqD9ow+VQ0jq9I4C7nSiB9jJ3QIhFpJD2rvRDQ4gSm5g5DbnfCWjslAhbZBnwwysMdbQhbwEwXRl5/CI5z3m9j1+/Bijx4pAYdozmuHBre0ZOdcAu4trytOmMyO3pDNRi+UEbPXJDlEgO0LdnNVV4Am2PBf0ZKmLrzrDWyK1QjK2uSH4iN3jhNoL8/MYg0WcbAM+yYCgFkmD43VU+ZjU/vQu0GjJhFwzhgj6NCIP3lwHiCwctg9hryac6dO/Vi86GITlSQW1rz/decP6acSpFu9xcvNTlrmbq7R6ldHQqQqo4wXiAp4uuMtD1u7CBaZDrZXTt4="
   apt:
     sources:
       - george-edison55-precise-backports
@@ -12,19 +15,19 @@ addons:
       - cmake-data
       - cmake
 
-  sonarcloud:
-    organization: "sebas-mora28"
-    token:
-      secure: "qBlFiNe6BbZxeSa4zKJNuMLI5qrgktzUFaXvEzDKlrLKnN434UlYfODFAzO3skgv8rHwySEB2B7IrMdDM0BPEDOd4/ip8+OxSQqOa0UCgNYUWuQQmGjnusdcm6TL+7BrW6qhKTLqLYOmEw7A80iFuxO4SatHNxOJDD4zDblxp6XDB/EXgZmh5YlIBCuflWYLpPfTcrHbLx31W/4sCHWdC4yZ90r6nN0bmHsVYCBvW7THjqYQT4be3jEtVzuElBaFrfpQtGzJcq6nllvpdS3UNzICP6mNKkWEsOxEXYAXIhVRJ1BZH/6oZYYjRm4DzP8939pEoDVKz+aJDqguUgE/3Xp0KnsJC+OUDLGJnDT1NAxNfAdejwHtVoPHWEHiqwkqkQeuRB70jTd90nEhkX0jqPL20XwxR2GEY/0Eo6WTKU2NvXrFgawKwbdLlVzCr7Xgjky/r5SSK9SIHBKdni23BjyGpy0aNtSCBTzWN9qbMhXb9HHdypaCncw/QTA7QgXw8XpH/r/v84ndWotCmk0uqzNlYJtZt79eIaQzDUSmByR5j/5vW8eKRmq0LYdIMgyy7oT+dWXfWHEyOVYnRnCgBk5wUBt7EFEJfTe5BWiSw4c/1v+aeZpKriFn6Ply9xWZiev2CuZW+w41FOMQU7NqLysJpGR0bn6uL8ScCM2mujI="
-
 script:
+  # Prepare the build system
   - mkdir build
   - cd build
   - cmake ..
   - cd ..
+  # Wraps the compilation with the Build Wrapper to generate configuration (used
+  # later by the SonarQube Scanner) into the "bw-output" folder
   - build-wrapper-linux-x86-64 --out-dir bw-output cmake --build build/
+  # And finally run the SonarQube analysis - read the "sonar-project.properties"
+  # file to see the specific configuration
   - sonar-scanner
 
-  cache:
-    directories:
-      - '$HOME/.sonar/cache'
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
