@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o  -o CPP_TravisCI 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/CPP_TravisCI.dir/src/Calculator.cpp.o CMakeFiles/CPP_TravisCI.dir/src/main.cpp.o CMakeFiles/CPP_TravisCI.dir/test/calculator.test.cpp.o  -o CPP_TravisCI 

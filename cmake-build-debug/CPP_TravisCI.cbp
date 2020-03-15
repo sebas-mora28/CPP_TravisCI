@@ -87,6 +87,12 @@
 		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.cpp">
 			<Option target="CPP_TravisCI"/>
 		</Unit>
+		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/Calculator.h">
+			<Option target="CPP_TravisCI"/>
+		</Unit>
+		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/src/main.cpp">
+			<Option target="CPP_TravisCI"/>
+		</Unit>
 		<Unit filename="/home/sebasmora/Documents/TEC/Semestre III/Datos II/Actividades/CPP_TravisCI/test/calculator.test.cpp">
 			<Option target="CPP_TravisCI"/>
 		</Unit>
